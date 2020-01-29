@@ -1,16 +1,16 @@
 # Pytest-Flask-Playground
 
-"Pytest (Flask-playground)"" is an example of what a conftest.py configuration file might look like for our Flask-playground project. It also contains a test file (test_config.py) that uses it.
-You can download [Flask-playground](https://github.com/pn141/Flask-playground) and the corresponding Pytest files by following the installation instructions below. 
+"Pytest (Flask-playground)"" is an example of what a conftest.py configuration file might look like for our Flask_playground project. It also contains a test file (test_config.py) that uses it.
+You can download [Flask_playground](https://github.com/pn141/Flask_playground) and the corresponding Pytest files by following the installation instructions below. 
 
 ## Installation instructions:
-**Note:** This project requires that "Flask-playground" is first installed. Use the link above to download and install before proceeding with the steps below.
+**Note:** This project requires that "Flask_playground" is first installed. Use the link above to download and install before proceeding with the steps below.
 
    1. Clone or download "Pytest-Flask-Playground" in a temporary location:
 
 ```git clone https://github.com/pn141/Pytest-Flask-Playground```
 
-   2. From the "Pytest-Flask-Playground" directory copy "conftest.py" and "test_config.py" to the root of your "Flask-playground" directory.
+   2. From the "Pytest-Flask-Playground" directory copy "conftest.py" and "test_config.py" to the root of your "Flask_playground" directory.
    
    3. Edit file "test_config", change the following line with an appropriate entry and save the file:
    ```
@@ -22,23 +22,23 @@ You can download [Flask-playground](https://github.com/pn141/Flask-playground) a
    **Note** There is no need to install Pytest as it is already part of the requirements for Flask_playground and has already been installed.
    
  ## Running Pytest-Flask-Playground
-Running "Pytest-Flask-Playground" requires that "Flask-playground" is started in "testing" mode. You can either use [this script](https://github.com/pn141/Changing-environment) or follow the instructions below:
+Running "Pytest-Flask-Playground" requires that "Flask_playground" is started in "testing" mode. You can either use [this script](https://github.com/pn141/Changing-environment) or follow the instructions below:
 
-   1. Make sure Flask-playground is stopped then locate file ".env" at the root of folder "Flask-playground"
+   1. Make sure Flask_playground is stopped then locate file ".env" at the root of folder "Flask_playground"
    
    2. Edit the file, locate entry ```FLASK_ENV = 'development'``` and replace it with ```FLASK_ENV = 'testing'```. Save the file and close it.
    
    3. In the same file, locate the following entry and make sure it matches the entry in "Installation instructions" step 3 above.
    ```
-   TEST_DATABASE_URL = 'sqlite:///C:\\path\\to\\flask-playground\\data-test.sqlite'
+   TEST_DATABASE_URL = 'sqlite:///C:\\path\\to\\flask_playground\\data-test.sqlite'
    ```
    
-   3. In the same location, edit file "flask-playground.py". Locate entry ```app = create_app('development')``` and replace it with ```app = create_app('testing')```. Save the file and close it.
+   3. In the same location, edit file "flask_playground.py". Locate entry ```app = create_app('development')``` and replace it with ```app = create_app('testing')```. Save the file and close it.
    
-   4. Start "flask-playground" using command "flask run". The application should now indicate in the shell that it is running in 'testing' mode.
+   4. Start "flask_playground" using command "flask run". The application should now indicate in the shell that it is running in 'testing' mode.
    ```
-   (venv) C:\projects\project - github\Flask-playground>flask run
- * Serving Flask app "flask-playground.py"
+   (venv) C:\projects\project - github\Flask_playground>flask run
+ * Serving Flask app "flask_playground.py"
  * Environment: testing
  * Debug mode: off
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
