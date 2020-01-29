@@ -20,3 +20,4 @@ You can download [Flask-playground](https://github.com/pn141/Flask-playground) a
            "flask_playground\\data-test.sqlite")
    ```
  ## Running Pytest-Flask-Playground
+Running "Pytest-Flask-Playground" requires that "Flask-playground" is started in "testing" mode. You can either use [this script](
