@@ -44,5 +44,17 @@ Running "Pytest-Flask-Playground" requires that "Flask-playground" is started in
    Linux venv activate: ```source venv/bin/activate```
    Windows venv activate: ```.\venv\Scripts\activate.bat```
    
-   6. 
-   
+   6. To run the tests use ```pytest test_config.py```
+   The result should be similar to this:
+   ```
+   (venv) C:\projects\project - github\Flask_playground>pytest test_config.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.1, pytest-5.2.1, py-1.8.0, pluggy-0.13.0
+rootdir: C:\projects\project - github\Flask_playground
+plugins: cov-2.8.1, flask-0.15.0, flask-sqlalchemy-1.0.2, mock-1.12.0
+collected 20 items
+
+test_config.py ....................                                                                              [100%]
+
+================================================= 20 passed in 0.20s ==================================================
+   ```
