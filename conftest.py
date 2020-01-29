@@ -1,3 +1,4 @@
+''' This is a conftest file that contains the fixture to be used in test_config '''
 import pytest
 from Flask_playground.flask_playground import app
 from Flask_playground.app import db
