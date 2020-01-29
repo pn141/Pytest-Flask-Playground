@@ -12,4 +12,11 @@ You can download [Flask-playground](https://github.com/pn141/Flask-playground) a
 
    2. From the "Pytest-Flask-Playground" directory copy "conftest.py" and "test_config.py" to the root of your "Flask-playground" directory.
    
+   3. Edit file "test_config", change the following line with an appropriate entry and save the file:
+   ```
+   # The entry needs to be changed to the path of the
+   # flask_playground folder on your machine
+   db_path = ("sqlite:///C:\\path\\to_folder\\"
+           "flask_playground\\data-test.sqlite")
+   ```
  ## Running Pytest-Flask-Playground
