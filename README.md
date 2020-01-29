@@ -62,3 +62,5 @@ test_config.py ....................                                             
 
 ================================================= 20 passed in 0.20s ==================================================
    ```
+   
+ Pytest is really good at catching test failures, so if the above command does not pass all 20 tests take the time to go through the command output and check the "AssertionErrors". They usually uncover a typo in a path, file name or file entry. 
