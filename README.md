@@ -32,7 +32,7 @@ Running "Pytest-Flask-Playground" requires that "Flask_playground" is started in
    ```
    TEST_DATABASE_URL = 'sqlite:///C:\\path\\to\\flask_playground\\data-test.sqlite'
    ```
-   
+   Save the file and close it.
    3. In the same location, edit file "flask_playground.py". Locate entry ```app = create_app('development')``` and replace it with ```app = create_app('testing')```. Save the file and close it.
    
    4. Start "flask_playground" using command "flask run". The application should now indicate in the shell that it is running in 'testing' mode.
