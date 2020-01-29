@@ -21,7 +21,7 @@ class TestFlaskApp:
         assert has_app_context() is True
 
     def test_flask_app_name_is_app(self):
-        assert current_app.name == 'app'
+        assert current_app.name == 'Flask_playground.app'
 
 
 class TestTestConfig:

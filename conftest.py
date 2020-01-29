@@ -2,8 +2,8 @@
 # set Flask to create an app with a test configuration
 
 import pytest
-from . import app
-from .app import db
+from Flask_playground.flask_playground import app
+from Flask_playground.app import db
 
 
 @pytest.fixture(scope='session')
