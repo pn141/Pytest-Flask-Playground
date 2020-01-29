@@ -19,9 +19,7 @@ You can download [Flask-playground](https://github.com/pn141/Flask-playground) a
    db_path = ("sqlite:///C:\\path\\to_folder\\"
            "flask_playground\\data-test.sqlite")
    ```
-   
-   4. Finally make sure your virtual environment for Flask-playground is started and install Pytest using pip
-   ```pip install pytest```
+   **Note** There is no need to install Pytest as it is already part of the requirements for Flask_playground and has already been installed.
    
  ## Running Pytest-Flask-Playground
 Running "Pytest-Flask-Playground" requires that "Flask-playground" is started in "testing" mode. You can either use [this script](https://github.com/pn141/Changing-environment) or follow the instructions below:
@@ -29,6 +27,11 @@ Running "Pytest-Flask-Playground" requires that "Flask-playground" is started in
    1. Make sure Flask-playground is stopped then locate file ".env" at the root of folder "Flask-playground"
    
    2. Edit the file, locate entry ```FLASK_ENV = 'development'``` and replace it with ```FLASK_ENV = 'testing'```. Save the file and close it.
+   
+   3. In the same file, locate the following entry and make sure it matches the entry in "Installation instructions" step 3 above.
+   ```
+   TEST_DATABASE_URL = 'sqlite:///C:\\path\\to\\flask-playground\\data-test.sqlite'
+   ```
    
    3. In the same location, edit file "flask-playground.py". Locate entry ```app = create_app('development')``` and replace it with ```app = create_app('testing')```. Save the file and close it.
    
